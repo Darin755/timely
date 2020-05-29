@@ -1,0 +1,11 @@
+#!/bin/bash
+while true; do
+	r=$(zenity --question --title="timely" --text="timely menu" --switch --extra-button="Timer" --extra-button="Alarm" --extra-button="exit")
+	if [ $r == "Timer" ]; then
+		./timer
+	elif [ $r == "Alarm" ]; then
+		./alarm
+	elif [ $r == "exit" ]; then
+		break
+	fi
+done

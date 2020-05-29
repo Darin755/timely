@@ -1,0 +1,4 @@
+#!/bin/bash
+t=$(zenity --forms --title="set timer" --text="set timer" --add-entry="time:")
+sleep $t | zenity --progress --text="timer running" --pulsate --auto-close --auto-kill
+zenity --info --text="timer done"
