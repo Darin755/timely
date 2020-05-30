@@ -1,7 +1,0 @@
-#!/bin/bash
-clear
-date
-while sleep 1; do 
-clear
-date
-done
