@@ -1,1 +1,8 @@
 apt install zenity at
+p=/usr/share/applications/timely.desktop
+echo "[Desktop Entry]" >> $p
+echo "Name=Timely" >> $p
+echo "Comment=timely clock" >> $p
+echo "Exec=$PWD/menu" >> $p
+
+
