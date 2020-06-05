@@ -1,0 +1,9 @@
+#!/bin/bash
+
+r=$(zenity --question --title="alarms" --text="alarms menu" --switch --extra-button="new alarm" --extra-button="remove alarms")
+if [ "$r" == "new alarm" ]; then
+	./new_alarm
+elif [ "$r" == "remove alarms" ]; then
+	./remove_alarm
+fi
+

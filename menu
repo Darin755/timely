@@ -4,7 +4,7 @@ while true; do
 	if [ $r == "Timer" ]; then
 		./timer
 	elif [ $r == "Alarm" ]; then
-		./alarm
+		./alarms
 	elif [ $r == "exit" ]; then
 		break
 	fi
