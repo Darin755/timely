@@ -16,4 +16,8 @@ echo "Name=Timely" >> $p
 echo "Comment=timely clock" >> $p
 echo "Exec=timely" >> $p
 
+chmod +x timely
+chmod +x -R main/alarm
+chmod +x -R main/timer
+chmod +x -R main/alert
 
