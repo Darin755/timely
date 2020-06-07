@@ -1,0 +1,18 @@
+#!/bin/bash
+p=$PWD
+while true; do
+	r=$(zenity --question --title="timely" --text="timely menu" --switch --extra-button="Timer" --extra-button="Alarm" --extra-button="Set alert sound" --extra-button="exit")
+	if [ $r == "Timer" ]; then
+		cd $p/main/timer
+		./timers
+	elif [ $r == "Alarm" ]; then
+		cd $p/main/alarm
+		./alarms
+	elif [ "$r" == "Set alert sound" ]; then
+		cd $p/main/alert
+		./select_alert
+	elif [ $r == "exit" ]; then
+		break
+	fi
+cd $p
+done

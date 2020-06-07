@@ -1,8 +1,19 @@
-apt install zenity at
+#!/bin/bash
+apt install zenity at mplayer
+
+d=/usr/bin/timely
+rm $d
+echo "#!/bin/bash" >> $d
+echo cd $PWD >> $d
+echo ./timely >> $d
+
+chmod +x /usr/bin/timely
+
 p=/usr/share/applications/timely.desktop
+rm $p
 echo "[Desktop Entry]" >> $p
 echo "Name=Timely" >> $p
 echo "Comment=timely clock" >> $p
-echo "Exec=$PWD/menu" >> $p
+echo "Exec=timely" >> $p
 
 

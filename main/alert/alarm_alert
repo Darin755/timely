@@ -1,0 +1,3 @@
+#!/bin/bash
+mplayer $(cat alert)
+echo "alert" | at $1 -q "t"

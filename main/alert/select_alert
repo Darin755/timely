@@ -1,0 +1,11 @@
+#!/bin/bash
+alarm=$(zenity --file-selection --title="select alarm" --text="" --filename=/usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga)
+
+if ! [[ $alarm == "" ]]; then
+rm alert
+echo $alarm >> alert
+else
+rm alert
+echo /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga >> alert
+fi
+zenity --info --title="alert sound" --text="alert sound set"

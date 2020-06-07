@@ -1,5 +1,0 @@
-#!/bin/bash
-a=$(at -l -q t)
-a=($a)
-b=(${a[0]} ${a[4]})
-zenity --list --title="remove alarms" --column="alarms" $a

@@ -1,0 +1,19 @@
+#!/bin/bash
+a=$(at -l -q t)
+a=($a)
+
+d=0
+r=-1
+s=""
+while (( $d < ${#a[@]} )); do 
+if [ $r == 1 ]; then
+s+="${a[$d]} "
+fi
+
+
+d=$(expr $d + 4 )
+r="$(($r * -1))"
+done
+
+o=$(zenity --list --title="remove alarms" --column="alarms" $s)
+

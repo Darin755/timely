@@ -1,6 +1,8 @@
 #!/bin/bash
+cd ..
 t=$(zenity --forms --title="alarm" --text="set alarm" --add-entry="time:")
-echo "espeak it-is-time-to-get-up" | at $t -q "t"
+echo $PWD/alert/alarm_alert "$t" | at $t -q "t"
+echo $PWD/alert/alarm_alert $t
 if [ $? == 0 ]; then
 zenity --info --text="alarm set for $t"
 else
