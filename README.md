@@ -1,6 +1,6 @@
 timely
 
-This is a timer/Alarm clock application that uses zenity at, and bash
+This is a timer/Alarm clock application that uses zenity, at, and bash
 
 The install script installs the nessasary packages and creates a entry in /usr/share/applications
 
