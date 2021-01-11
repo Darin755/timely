@@ -1,4 +1,4 @@
-timely
+# timely
 
 This is a timer/Alarm clock application that uses zenity, at, and bash
 
