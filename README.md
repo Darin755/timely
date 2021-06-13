@@ -1,13 +1,15 @@
-# timely
+## Timely
 
-This is a timer/Alarm clock application that uses zenity, at, and bash
+ - This is a timer/Alarm clock application that uses zenity, at, and bash
 
-The install script installs the nessasary packages and creates a entry in /usr/share/applications
 
-The menu script opens the main menu
+### About Timely
+ - The install script installs the nessasary packages and creates a entry in /usr/share/applications
 
-The timer script opens the timer
+ - The menu script opens the main menu
 
-The alarm script opens the alarm
+ - The timer script opens the timer
+
+ - The alarm script opens the alarm
 
 
